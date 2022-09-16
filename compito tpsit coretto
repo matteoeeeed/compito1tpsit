@@ -1,0 +1,125 @@
+<html>
+<style>
+.divg{
+background-color: gray;
+width: 300px;
+height: 300px;
+border: solid black 4px;
+border-radius: 4px;
+}
+
+.div1{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+position: relative;
+}
+.div2{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+position: relative;
+}
+.div3{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+position: relative;
+}
+
+.div11{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+left: 80px;
+position: relative;
+top: -235px;
+}
+
+.div12{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+left: 80px;
+position: relative;
+top: -235px;
+}
+.div13{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+left: 80px;
+position: relative;
+top: -235px;
+}
+.div14{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+left: 160px;
+position: relative;
+top: -470px;
+}
+
+.div15{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+left: 160px;
+position: relative;
+top: -470px;
+}
+.div16{
+background-color: green;
+width: 70px;
+height: 70px;
+border: solid black 4px;
+border-radius: 4px;
+left: 160px;
+position: relative;
+top: -470px;
+}
+</style>
+<div class="divg">
+<div class="div1"></div>
+<div class="div2"><button onclick="contaorizontale()">clicca right</button> </div>
+<div class="div3"> </div>
+<div class="div11"><button onclick="contaverticale()">clicca up</button></div>
+<div class="div12"></div>
+<div class="div13"><button onclick="contaorizontale()">clicca down</button></div>
+<div class="div14"></div>
+<div class="div15"><button onclick="contaverticale()">clicca left</button></div>
+<div class="div16"></div>
+</div>
+
+<script>
+let contverticaleee=0;
+let centorizontalee=0;
+function contaverticale(){
+contverticaleee+=1;
+document.getElementById("i").innerHTML =+ contverticaleee;
+}
+function contaorizontale(){
+    centorizontalee+=-1;
+document.getElementById("i2").innerHTML =+ centorizontalee;
+}
+</script>
+<p style="color: red;">Orizontale: <p id="i2">0</p>  </p>
+<p style="color: blue;">Verticale: <p id="i">0</p>  </p>
+</html>
